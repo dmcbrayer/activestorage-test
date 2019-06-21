@@ -21,6 +21,16 @@
     <%= form.text_area :description, class: 'form-control' %>
   </div>
 
+  <div class="form-group">
+    <%= form.label :cover_image %>
+    <%= form.file_field :cover_image, direct_upload: true %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :sample_images %>
+    <%= form.file_field :sample_images, multiple: true, direct_upload: true %>
+  </div>
+
   <div class="actions">
     <%= form.submit 'Submit', class: 'btn btn-primary' %>
   </div>

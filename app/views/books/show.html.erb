@@ -1,5 +1,13 @@
 <p id="notice"><%= notice %></p>
 
+<% if @book.cover_image.attached? %>
+  <%= image_tag @book.cover_image.variant(resize: '1200x800') %>
+<% end %>
+
+<% @book.sample_images.each do |image| %>
+  <%= image_tag image.variant(resize: '400x300') %>
+<% end %>
+
 <p>
   <strong>Title:</strong>
   <%= @book.title %>
