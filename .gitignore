@@ -13,6 +13,10 @@ dump.rdb
 # Ignore IDE fragments
 .idea
 
+# Ignore Terraform
+.terraform
+*.tfstate*
+
 # Ignore bundler config.
 /.bundle
 
